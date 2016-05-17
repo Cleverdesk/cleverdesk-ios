@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		322AA0DD6930DE7F8B9AAA33 /* Pods_Cleverdesk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4446EBBC6719F5F542994C3 /* Pods_Cleverdesk.framework */; };
+		36C352F1B70248D3861D74CF /* Pods_CleverdeskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42758A9C377261E9B7E1625E /* Pods_CleverdeskTests.framework */; };
+		B09023C9E2E23189501A06A7 /* Pods_CleverdeskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4261CE25F6CE50C2F5BFCF2 /* Pods_CleverdeskUITests.framework */; };
 		BD80BA091CE4E19900E55B12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD80BA081CE4E19900E55B12 /* AppDelegate.swift */; };
 		BD80BA0B1CE4E19900E55B12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD80BA0A1CE4E19900E55B12 /* ViewController.swift */; };
 		BD80BA0E1CE4E19900E55B12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD80BA0C1CE4E19900E55B12 /* Main.storyboard */; };
@@ -15,6 +18,18 @@
 		BD80BA161CE4E19900E55B12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD80BA141CE4E19900E55B12 /* LaunchScreen.storyboard */; };
 		BD80BA211CE4E19A00E55B12 /* CleverdeskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD80BA201CE4E19A00E55B12 /* CleverdeskTests.swift */; };
 		BD80BA2C1CE4E19A00E55B12 /* CleverdeskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD80BA2B1CE4E19A00E55B12 /* CleverdeskUITests.swift */; };
+		BD80BA3A1CE4E2F100E55B12 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD80BA391CE4E2F100E55B12 /* MenuViewController.swift */; };
+		BD80BA3E1CE4E5F400E55B12 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = BD80BA3D1CE4E5F400E55B12 /* Podfile */; };
+		BD80BA491CE7252E00E55B12 /* MenuTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD80BA481CE7252E00E55B12 /* MenuTableDelegate.swift */; };
+		BD80BA4C1CE87B8900E55B12 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD80BA4B1CE87B8900E55B12 /* Component.swift */; };
+		BD80BA501CE87C8300E55B12 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD80BA4F1CE87C8300E55B12 /* Label.swift */; };
+		BD80BA521CE87CE500E55B12 /* ComponentGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD80BA511CE87CE500E55B12 /* ComponentGroup.swift */; };
+		BD80BA541CE87D4F00E55B12 /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD80BA531CE87D4F00E55B12 /* UI.swift */; };
+		BD80BA561CE8810300E55B12 /* AbstractInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD80BA551CE8810300E55B12 /* AbstractInputField.swift */; };
+		BD80BA5A1CE891A000E55B12 /* BackendResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD80BA591CE891A000E55B12 /* BackendResponse.swift */; };
+		BD80BA5C1CE8C7C000E55B12 /* ComponentRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD80BA5B1CE8C7C000E55B12 /* ComponentRegistry.swift */; };
+		BDEB823E1CEB911000110D73 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = BDEB823D1CEB911000110D73 /* .gitignore */; };
+		BDEB82401CEB912200110D73 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = BDEB823F1CEB912200110D73 /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +50,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		390442FC3C3C8F6F63D5A66B /* Pods-Cleverdesk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cleverdesk.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cleverdesk/Pods-Cleverdesk.release.xcconfig"; sourceTree = "<group>"; };
+		42758A9C377261E9B7E1625E /* Pods_CleverdeskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleverdeskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		765F54C7C00401DD1EFDAD42 /* Pods-Cleverdesk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cleverdesk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cleverdesk/Pods-Cleverdesk.debug.xcconfig"; sourceTree = "<group>"; };
+		7E2CF7712C7974B299DDA263 /* Pods-CleverdeskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleverdeskTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CleverdeskTests/Pods-CleverdeskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A1DCD38AA7C338DCE7668DDD /* Pods-CleverdeskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleverdeskTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CleverdeskTests/Pods-CleverdeskTests.release.xcconfig"; sourceTree = "<group>"; };
+		A39D64A398EE0511C4C3DABE /* Pods-CleverdeskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleverdeskUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CleverdeskUITests/Pods-CleverdeskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A4446EBBC6719F5F542994C3 /* Pods_Cleverdesk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cleverdesk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD80BA051CE4E19800E55B12 /* Cleverdesk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cleverdesk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD80BA081CE4E19900E55B12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD80BA0A1CE4E19900E55B12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +71,20 @@
 		BD80BA271CE4E19A00E55B12 /* CleverdeskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleverdeskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD80BA2B1CE4E19A00E55B12 /* CleverdeskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleverdeskUITests.swift; sourceTree = "<group>"; };
 		BD80BA2D1CE4E19A00E55B12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD80BA391CE4E2F100E55B12 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		BD80BA3D1CE4E5F400E55B12 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		BD80BA481CE7252E00E55B12 /* MenuTableDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableDelegate.swift; sourceTree = "<group>"; };
+		BD80BA4B1CE87B8900E55B12 /* Component.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
+		BD80BA4F1CE87C8300E55B12 /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		BD80BA511CE87CE500E55B12 /* ComponentGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentGroup.swift; sourceTree = "<group>"; };
+		BD80BA531CE87D4F00E55B12 /* UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UI.swift; sourceTree = "<group>"; };
+		BD80BA551CE8810300E55B12 /* AbstractInputField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractInputField.swift; sourceTree = "<group>"; };
+		BD80BA591CE891A000E55B12 /* BackendResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendResponse.swift; sourceTree = "<group>"; };
+		BD80BA5B1CE8C7C000E55B12 /* ComponentRegistry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentRegistry.swift; sourceTree = "<group>"; };
+		BDEB823D1CEB911000110D73 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		BDEB823F1CEB912200110D73 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		D4261CE25F6CE50C2F5BFCF2 /* Pods_CleverdeskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleverdeskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8EF2FFDFA321D543A99CCDE /* Pods-CleverdeskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleverdeskUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CleverdeskUITests/Pods-CleverdeskUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				322AA0DD6930DE7F8B9AAA33 /* Pods_Cleverdesk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36C352F1B70248D3861D74CF /* Pods_CleverdeskTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,19 +108,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B09023C9E2E23189501A06A7 /* Pods_CleverdeskUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0871D034EDE9E6217222D101 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				765F54C7C00401DD1EFDAD42 /* Pods-Cleverdesk.debug.xcconfig */,
+				390442FC3C3C8F6F63D5A66B /* Pods-Cleverdesk.release.xcconfig */,
+				7E2CF7712C7974B299DDA263 /* Pods-CleverdeskTests.debug.xcconfig */,
+				A1DCD38AA7C338DCE7668DDD /* Pods-CleverdeskTests.release.xcconfig */,
+				A39D64A398EE0511C4C3DABE /* Pods-CleverdeskUITests.debug.xcconfig */,
+				D8EF2FFDFA321D543A99CCDE /* Pods-CleverdeskUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BD80B9FC1CE4E19800E55B12 = {
 			isa = PBXGroup;
 			children = (
+				BDEB823F1CEB912200110D73 /* LICENSE */,
+				BDEB823D1CEB911000110D73 /* .gitignore */,
+				BD80BA3D1CE4E5F400E55B12 /* Podfile */,
 				BD80BA071CE4E19900E55B12 /* Cleverdesk */,
 				BD80BA1F1CE4E19A00E55B12 /* CleverdeskTests */,
 				BD80BA2A1CE4E19A00E55B12 /* CleverdeskUITests */,
 				BD80BA061CE4E19800E55B12 /* Products */,
+				0871D034EDE9E6217222D101 /* Pods */,
+				CB6792A856D3D5E8AEA87E26 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +156,7 @@
 		BD80BA071CE4E19900E55B12 /* Cleverdesk */ = {
 			isa = PBXGroup;
 			children = (
+				BD80BA4A1CE87B7300E55B12 /* UIComponents */,
 				BD80BA081CE4E19900E55B12 /* AppDelegate.swift */,
 				BD80BA0A1CE4E19900E55B12 /* ViewController.swift */,
 				BD80BA0C1CE4E19900E55B12 /* Main.storyboard */,
@@ -106,6 +164,9 @@
 				BD80BA141CE4E19900E55B12 /* LaunchScreen.storyboard */,
 				BD80BA171CE4E19900E55B12 /* Info.plist */,
 				BD80BA0F1CE4E19900E55B12 /* Cleverdesk.xcdatamodeld */,
+				BD80BA391CE4E2F100E55B12 /* MenuViewController.swift */,
+				BD80BA481CE7252E00E55B12 /* MenuTableDelegate.swift */,
+				BD80BA591CE891A000E55B12 /* BackendResponse.swift */,
 			);
 			path = Cleverdesk;
 			sourceTree = "<group>";
@@ -128,6 +189,45 @@
 			path = CleverdeskUITests;
 			sourceTree = "<group>";
 		};
+		BD80BA4A1CE87B7300E55B12 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				BD80BA4E1CE87C6400E55B12 /* General */,
+				BD80BA4D1CE87C5E00E55B12 /* Form */,
+				BD80BA4B1CE87B8900E55B12 /* Component.swift */,
+				BD80BA511CE87CE500E55B12 /* ComponentGroup.swift */,
+				BD80BA531CE87D4F00E55B12 /* UI.swift */,
+				BD80BA5B1CE8C7C000E55B12 /* ComponentRegistry.swift */,
+			);
+			name = UIComponents;
+			sourceTree = "<group>";
+		};
+		BD80BA4D1CE87C5E00E55B12 /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				BD80BA551CE8810300E55B12 /* AbstractInputField.swift */,
+			);
+			name = Form;
+			sourceTree = "<group>";
+		};
+		BD80BA4E1CE87C6400E55B12 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				BD80BA4F1CE87C8300E55B12 /* Label.swift */,
+			);
+			name = General;
+			sourceTree = "<group>";
+		};
+		CB6792A856D3D5E8AEA87E26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4446EBBC6719F5F542994C3 /* Pods_Cleverdesk.framework */,
+				42758A9C377261E9B7E1625E /* Pods_CleverdeskTests.framework */,
+				D4261CE25F6CE50C2F5BFCF2 /* Pods_CleverdeskUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +235,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD80BA301CE4E19A00E55B12 /* Build configuration list for PBXNativeTarget "Cleverdesk" */;
 			buildPhases = (
+				BAC070608E3143CB9A6910F6 /* Check Pods Manifest.lock */,
 				BD80BA011CE4E19800E55B12 /* Sources */,
 				BD80BA021CE4E19800E55B12 /* Frameworks */,
 				BD80BA031CE4E19800E55B12 /* Resources */,
+				2562A60902878A95E07E0276 /* Embed Pods Frameworks */,
+				FDC5F5D680499B21F47E61AC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +255,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD80BA331CE4E19A00E55B12 /* Build configuration list for PBXNativeTarget "CleverdeskTests" */;
 			buildPhases = (
+				63290D75A9B2ACAC29FF3139 /* Check Pods Manifest.lock */,
 				BD80BA181CE4E19A00E55B12 /* Sources */,
 				BD80BA191CE4E19A00E55B12 /* Frameworks */,
 				BD80BA1A1CE4E19A00E55B12 /* Resources */,
+				7F4DDC859221F1FF578F5592 /* Embed Pods Frameworks */,
+				F1F02980AC8DE9BF07A09074 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +276,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD80BA361CE4E19A00E55B12 /* Build configuration list for PBXNativeTarget "CleverdeskUITests" */;
 			buildPhases = (
+				E88BC2594EB7A2E2136EA8EB /* Check Pods Manifest.lock */,
 				BD80BA231CE4E19A00E55B12 /* Sources */,
 				BD80BA241CE4E19A00E55B12 /* Frameworks */,
 				BD80BA251CE4E19A00E55B12 /* Resources */,
+				D3E4EB2B8DD7708E7A3D6A1A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,6 +304,12 @@
 				TargetAttributes = {
 					BD80BA041CE4E19800E55B12 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = Z48VLBM2R7;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					BD80BA1B1CE4E19A00E55B12 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -232,8 +346,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDEB82401CEB912200110D73 /* LICENSE in Resources */,
+				BDEB823E1CEB911000110D73 /* .gitignore in Resources */,
 				BD80BA161CE4E19900E55B12 /* LaunchScreen.storyboard in Resources */,
 				BD80BA131CE4E19900E55B12 /* Assets.xcassets in Resources */,
+				BD80BA3E1CE4E5F400E55B12 /* Podfile in Resources */,
 				BD80BA0E1CE4E19900E55B12 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,14 +371,146 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2562A60902878A95E07E0276 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cleverdesk/Pods-Cleverdesk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63290D75A9B2ACAC29FF3139 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7F4DDC859221F1FF578F5592 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CleverdeskTests/Pods-CleverdeskTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAC070608E3143CB9A6910F6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D3E4EB2B8DD7708E7A3D6A1A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CleverdeskUITests/Pods-CleverdeskUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E88BC2594EB7A2E2136EA8EB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F1F02980AC8DE9BF07A09074 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CleverdeskTests/Pods-CleverdeskTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDC5F5D680499B21F47E61AC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cleverdesk/Pods-Cleverdesk-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BD80BA011CE4E19800E55B12 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BD80BA0B1CE4E19900E55B12 /* ViewController.swift in Sources */,
+				BD80BA4C1CE87B8900E55B12 /* Component.swift in Sources */,
+				BD80BA541CE87D4F00E55B12 /* UI.swift in Sources */,
 				BD80BA111CE4E19900E55B12 /* Cleverdesk.xcdatamodeld in Sources */,
 				BD80BA091CE4E19900E55B12 /* AppDelegate.swift in Sources */,
+				BD80BA561CE8810300E55B12 /* AbstractInputField.swift in Sources */,
+				BD80BA491CE7252E00E55B12 /* MenuTableDelegate.swift in Sources */,
+				BD80BA5C1CE8C7C000E55B12 /* ComponentRegistry.swift in Sources */,
+				BD80BA501CE87C8300E55B12 /* Label.swift in Sources */,
+				BD80BA3A1CE4E2F100E55B12 /* MenuViewController.swift in Sources */,
+				BD80BA521CE87CE500E55B12 /* ComponentGroup.swift in Sources */,
+				BD80BA5A1CE891A000E55B12 /* BackendResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,19 +652,26 @@
 		};
 		BD80BA311CE4E19A00E55B12 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 765F54C7C00401DD1EFDAD42 /* Pods-Cleverdesk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Cleverdesk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.cleverdesk.Cleverdesk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		BD80BA321CE4E19A00E55B12 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 390442FC3C3C8F6F63D5A66B /* Pods-Cleverdesk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Cleverdesk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.cleverdesk.Cleverdesk;
@@ -425,6 +681,7 @@
 		};
 		BD80BA341CE4E19A00E55B12 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E2CF7712C7974B299DDA263 /* Pods-CleverdeskTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = CleverdeskTests/Info.plist;
@@ -437,6 +694,7 @@
 		};
 		BD80BA351CE4E19A00E55B12 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1DCD38AA7C338DCE7668DDD /* Pods-CleverdeskTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = CleverdeskTests/Info.plist;
@@ -449,6 +707,7 @@
 		};
 		BD80BA371CE4E19A00E55B12 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A39D64A398EE0511C4C3DABE /* Pods-CleverdeskUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = CleverdeskUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -460,6 +719,7 @@
 		};
 		BD80BA381CE4E19A00E55B12 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8EF2FFDFA321D543A99CCDE /* Pods-CleverdeskUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = CleverdeskUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -488,6 +748,7 @@
 				BD80BA321CE4E19A00E55B12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BD80BA331CE4E19A00E55B12 /* Build configuration list for PBXNativeTarget "CleverdeskTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +757,7 @@
 				BD80BA351CE4E19A00E55B12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BD80BA361CE4E19A00E55B12 /* Build configuration list for PBXNativeTarget "CleverdeskUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +766,7 @@
 				BD80BA381CE4E19A00E55B12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

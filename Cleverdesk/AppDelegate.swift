@@ -8,15 +8,51 @@
 
 import UIKit
 import CoreData
+import DrawerController
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var centerDrawer: DrawerController!
+    let api_url: NSURL = NSURL(string: "http://localhost:8080")!
 
-
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    func application(application: UIApplication, willFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+       
+        
+        
+        return true
+    }
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
+       
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let center = storyBoard.instantiateViewControllerWithIdentifier("ViewController") as! ViewController
+        let left = storyBoard.instantiateViewControllerWithIdentifier("MenuViewController") as! MenuViewController
+        
+        let leftSideNav = UINavigationController(rootViewController: left)
+        let centerSideNav = UINavigationController(rootViewController: center)
+        
+        centerDrawer = DrawerController(centerViewController: centerSideNav, leftDrawerViewController: leftSideNav)
+        
+        centerDrawer.showsShadows = false
+        centerDrawer.restorationIdentifier = "Drawer"
+        centerDrawer.openDrawerGestureModeMask = .PanningCenterView
+        centerDrawer.closeDrawerGestureModeMask = .PanningCenterView
+        
+                
+    
+        
+        
+        
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window?.tintColor = UIColor(red: 29/255, green: 173/255, blue: 234/255, alpha: 1.0)
+        window!.rootViewController = centerDrawer
+        window!.makeKeyAndVisible()
+        
+        
         return true
     }
 

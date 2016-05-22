@@ -41,11 +41,11 @@ class UI: ComponentGroup {
         return ret
     }
     
-    @objc func fromJSON(json: AnyObject) {
+    func fromJSON(json: AnyObject) {
         print(json)
         let registry = ComponentRegistry()
         components.removeAll()
-        let cont: Dictionary< NSObject, Dictionary<String, AnyObject>> = json as! Dictionary<NSObject, Dictionary<String, AnyObject>>
+        let cont: Dictionary< NSObject, Dictionary<String, NSObject>> = json as! Dictionary<NSObject, Dictionary<String, NSObject>>
         let content = Array(cont.values)
         for pure in content {
             if pure["name"] != nil {

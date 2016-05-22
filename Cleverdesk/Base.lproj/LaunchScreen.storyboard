@@ -4,6 +4,11 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Raleway regular.ttf">
+            <string>Raleway-Regular</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -16,7 +21,32 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="1461859168_light-bulb" translatesAutoresizingMaskIntoConstraints="NO" id="5VM-WF-lKP">
+                                <rect key="frame" x="215" y="214" width="171" height="171"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="171" id="O6b-MK-q2a"/>
+                                    <constraint firstAttribute="width" constant="171" id="cIR-G7-4VG"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cleverdesk" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLL-TO-6FV">
+                                <rect key="frame" x="215" y="393" width="171" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="171" id="3ej-xe-O9w"/>
+                                    <constraint firstAttribute="height" constant="51" id="wbD-g0-HqO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5VM-WF-lKP" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="24j-iK-EFU"/>
+                            <constraint firstItem="5VM-WF-lKP" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="4FN-Li-yhG"/>
+                            <constraint firstItem="fLL-TO-6FV" firstAttribute="centerX" secondItem="5VM-WF-lKP" secondAttribute="centerX" id="8Al-1N-eAy"/>
+                            <constraint firstItem="fLL-TO-6FV" firstAttribute="top" secondItem="5VM-WF-lKP" secondAttribute="bottom" constant="8" id="qBb-MA-kxz"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +54,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1461859168_light-bulb" width="171" height="171"/>
+    </resources>
 </document>

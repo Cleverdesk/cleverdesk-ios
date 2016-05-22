@@ -21,7 +21,8 @@ class Label: Component{
         return Label()
     }
     func fromJSON(json: AnyObject){
-        text = (json as! [String: String])["text"]
+        
+        text = (json as! Dictionary<String, String>)["text"]
     }
     
     func toUI(mask: CGRect) -> [UIView]? {

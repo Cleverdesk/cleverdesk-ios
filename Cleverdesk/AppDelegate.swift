@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var centerDrawer: DrawerController!
-    let api_url: NSURL = NSURL(string: "http://localhost:8080")!
+    let api_url: NSURL = NSURL(string: "http://Jonass-iMac.local:8080")!
 
     func application(application: UIApplication, willFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.

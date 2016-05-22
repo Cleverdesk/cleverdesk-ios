@@ -25,7 +25,7 @@ class ViewController: UIViewController {
                 do{
                     let request = BackendResponse()
                     try request.execute("TestPlugin/HelloWorld")
-                    dispatch_sync(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), { 
+                    dispatch_async(dispatch_get_main_queue(), {
                         self.scrollView.subviews.forEach({ (vi) in
                             vi.removeFromSuperview()
                         })

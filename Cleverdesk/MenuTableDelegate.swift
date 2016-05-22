@@ -39,8 +39,8 @@ class MenuTableDelegate: UIViewController, UITableViewDataSource, UITableViewDel
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("listmenu", forIndexPath: indexPath)
-        cell.textLabel?.text = Array(pages.keys)[indexPath.row]
+        let cell = tableView.dequeueReusableCellWithIdentifier("listmenu", forIndexPath: indexPath) as! MenuCell
+        cell.title?.text = Array(pages.keys)[indexPath.row]
         return cell
     }
     

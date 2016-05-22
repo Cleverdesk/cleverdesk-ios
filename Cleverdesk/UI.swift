@@ -45,11 +45,11 @@ class UI: ComponentGroup {
         print(json)
         let registry = ComponentRegistry()
         components.removeAll()
-        let cont: Dictionary< NSObject, Dictionary<String, NSObject>> = json as! Dictionary<NSObject, Dictionary<String, NSObject>>
-        let content = Array(cont.values)
-        for pure in content {
-            if pure["name"] != nil {
+        let cont: NSDictionary = json as! NSDictionary
+        for  pure in (cont["components"] as! NSArray) {
+            if pure["name"] !=  nil {
                 var comp = registry.getForName(pure["name"] as! String)
+                
                 if comp != nil{
                     
                     comp = comp!.copy()

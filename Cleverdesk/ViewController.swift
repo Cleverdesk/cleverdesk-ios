@@ -9,7 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var page: UILabel!
+    
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var leftSliderBtn: UIBarButtonItem!
     
@@ -25,13 +27,19 @@ class ViewController: UIViewController {
                 do{
                     let request = BackendResponse()
                     try request.execute("TestPlugin/HelloWorld")
+                    self.page.text = "HelloWorld"
                     dispatch_async(dispatch_get_main_queue(), {
                         self.scrollView.subviews.forEach({ (vi) in
                             vi.removeFromSuperview()
                         })
+                        var pos:CGFloat = -8;
                         for view in request.toUI(){
+                            view.frame = CGRectMake(0, pos + 8 - view.frame.height, view.frame.width, view.frame.height)
+                            pos += 8 + view.frame.height
+                            print(view)
                             self.scrollView.addSubview(view)
                         }
+                        app.centerDrawer.closeDrawerAnimated(true, completion: nil)
                     })
                    
                 }catch{

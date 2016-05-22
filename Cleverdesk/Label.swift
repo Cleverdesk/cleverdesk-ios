@@ -20,9 +20,13 @@ class Label: Component{
     func copy() -> Component {
         return Label()
     }
+    
     func fromJSON(json: AnyObject){
         
-        text = (json as! Dictionary<String, String>)["text"]
+        print(json)
+        let text_s = (json as! Dictionary<NSString, NSString>)["text"]
+        
+        text = text_s as? String
     }
     
     func toUI(mask: CGRect) -> [UIView]? {

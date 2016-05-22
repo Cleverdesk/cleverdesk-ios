@@ -4,7 +4,8 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'Cleverdesk' do
-pod 'DrawerController', '~> 1.0'
+  pod 'DrawerController', '~> 1.0'
+  pod 'JGProgressHUD'
 end
 
 target 'CleverdeskTests' do

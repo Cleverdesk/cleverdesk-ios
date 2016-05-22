@@ -12,13 +12,15 @@ import UIKit
 class BackendResponse {
     var base_url: String = "http://Jonass-iMac.local:8080/"
     var body: AnyObject?
-    var status_code: Int?
+    var status_code: HTTPStatusCode?
+
     
     func execute(path: String) throws  {
         print("\(base_url)\(path)")
         let data: NSData =  NSData(contentsOfURL: NSURL(string: "\(base_url)\(path)")!)!
         var json: [String: AnyObject] =  try NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments) as! [String: AnyObject]
-        status_code = json["status"] as? Int
+        status_code = HTTPStatusCode(rawValue: (json["status"] as? Int)!)
+
         body = json["body"]
     }
     
@@ -30,6 +32,7 @@ class BackendResponse {
         ui.fromJSON(body!)
         return ui.toUI(CGRectMake(0, 0, 100, 20))!
     }
+    
     
     
 }

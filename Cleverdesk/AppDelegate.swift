@@ -14,6 +14,7 @@ import DrawerController
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var center: ViewController?
     var centerDrawer: DrawerController!
     let api_url: NSURL = NSURL(string: "http://Jonass-iMac.local:8080")!
 
@@ -29,11 +30,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
        
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let center = storyBoard.instantiateViewControllerWithIdentifier("ViewController") as! ViewController
+        center = storyBoard.instantiateViewControllerWithIdentifier("ViewController") as? ViewController
         let left = storyBoard.instantiateViewControllerWithIdentifier("MenuViewController") as! MenuViewController
         
         let leftSideNav = UINavigationController(rootViewController: left)
-        let centerSideNav = UINavigationController(rootViewController: center)
+        let centerSideNav = UINavigationController(rootViewController: center!)
         
         centerDrawer = DrawerController(centerViewController: centerSideNav, leftDrawerViewController: leftSideNav)
         

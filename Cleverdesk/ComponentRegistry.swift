@@ -13,6 +13,7 @@ class ComponentRegistry {
         get {
             var comps = [Component]()
             comps.append(Label())
+            comps.append(InputField())
             return comps
         }
     }

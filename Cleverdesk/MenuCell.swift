@@ -12,4 +12,5 @@ import UIKit
 class MenuCell: UITableViewCell {
     
     @IBOutlet weak var title: UILabel!
+    var path: String = ""
 }

@@ -14,6 +14,7 @@ class ComponentRegistry {
             var comps = [Component]()
             comps.append(Label())
             comps.append(InputField())
+            comps.append(YouTubeVideo())
             return comps
         }
     }

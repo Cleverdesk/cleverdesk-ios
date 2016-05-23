@@ -61,6 +61,8 @@ class UI: ComponentGroup {
                     comp?.fromJSON(pure)
                     
                     components.append(comp!)
+                }else{
+                    print("Missing implementationf for: \(pure["name"])")
                 }
             }
         }

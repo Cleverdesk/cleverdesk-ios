@@ -14,6 +14,7 @@
 		BD5FC2451CF23ED6007F89CB /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5FC2441CF23ED6007F89CB /* HTTPStatusCode.swift */; };
 		BD5FC2471CF2457C007F89CB /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5FC2461CF2457C007F89CB /* InputField.swift */; };
 		BD5FC2491CF34E5E007F89CB /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = BD5FC2481CF34E5E007F89CB /* README.md */; };
+		BD5FC24B1CF3583F007F89CB /* YouTubeVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5FC24A1CF3583F007F89CB /* YouTubeVideo.swift */; };
 		BD602E431CF2087200C478DF /* Open Sans regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD602E381CF2084C00C478DF /* Open Sans regular.ttf */; };
 		BD602E441CF2087200C478DF /* Raleway regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD602E391CF2085C00C478DF /* Raleway regular.ttf */; };
 		BD80BA091CE4E19900E55B12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD80BA081CE4E19900E55B12 /* AppDelegate.swift */; };
@@ -67,6 +68,7 @@
 		BD5FC2441CF23ED6007F89CB /* HTTPStatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
 		BD5FC2461CF2457C007F89CB /* InputField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
 		BD5FC2481CF34E5E007F89CB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BD5FC24A1CF3583F007F89CB /* YouTubeVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouTubeVideo.swift; sourceTree = "<group>"; };
 		BD602E381CF2084C00C478DF /* Open Sans regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Open Sans regular.ttf"; sourceTree = "<group>"; };
 		BD602E391CF2085C00C478DF /* Raleway regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway regular.ttf"; sourceTree = "<group>"; };
 		BD80BA051CE4E19800E55B12 /* Cleverdesk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cleverdesk.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -241,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				BD80BA4F1CE87C8300E55B12 /* Label.swift */,
+				BD5FC24A1CF3583F007F89CB /* YouTubeVideo.swift */,
 			);
 			name = General;
 			sourceTree = "<group>";
@@ -543,6 +546,7 @@
 				BD80BA3A1CE4E2F100E55B12 /* MenuViewController.swift in Sources */,
 				BD80BA521CE87CE500E55B12 /* ComponentGroup.swift in Sources */,
 				BD5FC2431CF23275007F89CB /* MenuCell.swift in Sources */,
+				BD5FC24B1CF3583F007F89CB /* YouTubeVideo.swift in Sources */,
 				BD80BA5A1CE891A000E55B12 /* BackendResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

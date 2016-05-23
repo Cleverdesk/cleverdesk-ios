@@ -6,6 +6,7 @@ use_frameworks!
 target 'Cleverdesk' do
   pod 'DrawerController', '~> 1.0'
   pod 'JGProgressHUD'
+  pod 'YouTubePlayer'
 end
 
 target 'CleverdeskTests' do

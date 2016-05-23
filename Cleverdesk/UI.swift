@@ -35,7 +35,9 @@ class UI: ComponentGroup {
         var ret: [UIView] = [UIView]()
         for comp in components {
             if comp.toUI(frame) != nil {
-                ret.appendContentsOf(comp.toUI(frame)!)
+                for view in comp.toUI(frame)! {
+                    ret.append(view)
+                }
             }
         }
         return ret
@@ -57,6 +59,7 @@ class UI: ComponentGroup {
                         return
                     }
                     comp?.fromJSON(pure)
+                    
                     components.append(comp!)
                 }
             }

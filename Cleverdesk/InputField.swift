@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class InputField: Component{
+class InputField: Component {
     
     var label: String?
     var enabled: Bool?
@@ -45,16 +45,23 @@ class InputField: Component{
         if enabled != nil {
             input.enabled = enabled!
         }
+        input.borderStyle = .RoundedRect
+        input.backgroundColor = UIColor.whiteColor()
         input.text = value
+        input.font = UIFont.systemFontOfSize(14.0)
+        input.textAlignment = .Left
+        input.textColor = UIColor.blackColor()
+        print(input)
         
         if label != nil {
-            let label_v = UILabel()
+            let label_v = UILabel(frame: CGRectMake(0, 0, 10, 12))
             label_v.text = label
-            label_v.frame = CGRectMake(0, 0, 10, 12)
             return [label_v, input]
             
         }
         return [input]
         
     }
+    
+    
 }

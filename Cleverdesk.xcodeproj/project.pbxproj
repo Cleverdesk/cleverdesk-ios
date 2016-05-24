@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		322AA0DD6930DE7F8B9AAA33 /* Pods_Cleverdesk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4446EBBC6719F5F542994C3 /* Pods_Cleverdesk.framework */; };
 		36C352F1B70248D3861D74CF /* Pods_CleverdeskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42758A9C377261E9B7E1625E /* Pods_CleverdeskTests.framework */; };
+		65966F9E1CF483DC00FE4B8B /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65966F9D1CF483DC00FE4B8B /* CheckBox.swift */; };
+		65966FA01CF486A800FE4B8B /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65966F9F1CF486A800FE4B8B /* RadioButton.swift */; };
+		65966FA21CF4887C00FE4B8B /* RadiobuttonGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65966FA11CF4887C00FE4B8B /* RadiobuttonGroup.swift */; };
 		B09023C9E2E23189501A06A7 /* Pods_CleverdeskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4261CE25F6CE50C2F5BFCF2 /* Pods_CleverdeskUITests.framework */; };
 		BD5FC2431CF23275007F89CB /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5FC2421CF23275007F89CB /* MenuCell.swift */; };
 		BD5FC2451CF23ED6007F89CB /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5FC2441CF23ED6007F89CB /* HTTPStatusCode.swift */; };
@@ -59,6 +62,9 @@
 /* Begin PBXFileReference section */
 		390442FC3C3C8F6F63D5A66B /* Pods-Cleverdesk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cleverdesk.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cleverdesk/Pods-Cleverdesk.release.xcconfig"; sourceTree = "<group>"; };
 		42758A9C377261E9B7E1625E /* Pods_CleverdeskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleverdeskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65966F9D1CF483DC00FE4B8B /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		65966F9F1CF486A800FE4B8B /* RadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
+		65966FA11CF4887C00FE4B8B /* RadiobuttonGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadiobuttonGroup.swift; sourceTree = "<group>"; };
 		765F54C7C00401DD1EFDAD42 /* Pods-Cleverdesk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cleverdesk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cleverdesk/Pods-Cleverdesk.debug.xcconfig"; sourceTree = "<group>"; };
 		7E2CF7712C7974B299DDA263 /* Pods-CleverdeskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleverdeskTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CleverdeskTests/Pods-CleverdeskTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A1DCD38AA7C338DCE7668DDD /* Pods-CleverdeskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleverdeskTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CleverdeskTests/Pods-CleverdeskTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -235,6 +241,9 @@
 			children = (
 				BD80BA551CE8810300E55B12 /* AbstractInputField.swift */,
 				BD5FC2461CF2457C007F89CB /* InputField.swift */,
+				65966F9D1CF483DC00FE4B8B /* CheckBox.swift */,
+				65966F9F1CF486A800FE4B8B /* RadioButton.swift */,
+				65966FA11CF4887C00FE4B8B /* RadiobuttonGroup.swift */,
 			);
 			name = Form;
 			sourceTree = "<group>";
@@ -265,12 +274,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD80BA301CE4E19A00E55B12 /* Build configuration list for PBXNativeTarget "Cleverdesk" */;
 			buildPhases = (
-				BAC070608E3143CB9A6910F6 /* Check Pods Manifest.lock */,
+				BAC070608E3143CB9A6910F6 /* 📦 Check Pods Manifest.lock */,
 				BD80BA011CE4E19800E55B12 /* Sources */,
 				BD80BA021CE4E19800E55B12 /* Frameworks */,
 				BD80BA031CE4E19800E55B12 /* Resources */,
-				2562A60902878A95E07E0276 /* Embed Pods Frameworks */,
-				FDC5F5D680499B21F47E61AC /* Copy Pods Resources */,
+				2562A60902878A95E07E0276 /* 📦 Embed Pods Frameworks */,
+				FDC5F5D680499B21F47E61AC /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -285,12 +294,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD80BA331CE4E19A00E55B12 /* Build configuration list for PBXNativeTarget "CleverdeskTests" */;
 			buildPhases = (
-				63290D75A9B2ACAC29FF3139 /* Check Pods Manifest.lock */,
+				63290D75A9B2ACAC29FF3139 /* 📦 Check Pods Manifest.lock */,
 				BD80BA181CE4E19A00E55B12 /* Sources */,
 				BD80BA191CE4E19A00E55B12 /* Frameworks */,
 				BD80BA1A1CE4E19A00E55B12 /* Resources */,
-				7F4DDC859221F1FF578F5592 /* Embed Pods Frameworks */,
-				F1F02980AC8DE9BF07A09074 /* Copy Pods Resources */,
+				7F4DDC859221F1FF578F5592 /* 📦 Embed Pods Frameworks */,
+				F1F02980AC8DE9BF07A09074 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -306,11 +315,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD80BA361CE4E19A00E55B12 /* Build configuration list for PBXNativeTarget "CleverdeskUITests" */;
 			buildPhases = (
-				E88BC2594EB7A2E2136EA8EB /* Check Pods Manifest.lock */,
+				E88BC2594EB7A2E2136EA8EB /* 📦 Check Pods Manifest.lock */,
 				BD80BA231CE4E19A00E55B12 /* Sources */,
 				BD80BA241CE4E19A00E55B12 /* Frameworks */,
 				BD80BA251CE4E19A00E55B12 /* Resources */,
-				D3E4EB2B8DD7708E7A3D6A1A /* Copy Pods Resources */,
+				D3E4EB2B8DD7708E7A3D6A1A /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -404,14 +413,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2562A60902878A95E07E0276 /* Embed Pods Frameworks */ = {
+		2562A60902878A95E07E0276 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,14 +428,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cleverdesk/Pods-Cleverdesk-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		63290D75A9B2ACAC29FF3139 /* Check Pods Manifest.lock */ = {
+		63290D75A9B2ACAC29FF3139 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,14 +443,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		7F4DDC859221F1FF578F5592 /* Embed Pods Frameworks */ = {
+		7F4DDC859221F1FF578F5592 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,14 +458,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CleverdeskTests/Pods-CleverdeskTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BAC070608E3143CB9A6910F6 /* Check Pods Manifest.lock */ = {
+		BAC070608E3143CB9A6910F6 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,14 +473,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		D3E4EB2B8DD7708E7A3D6A1A /* Copy Pods Resources */ = {
+		D3E4EB2B8DD7708E7A3D6A1A /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,14 +488,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CleverdeskUITests/Pods-CleverdeskUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E88BC2594EB7A2E2136EA8EB /* Check Pods Manifest.lock */ = {
+		E88BC2594EB7A2E2136EA8EB /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,14 +503,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		F1F02980AC8DE9BF07A09074 /* Copy Pods Resources */ = {
+		F1F02980AC8DE9BF07A09074 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,14 +518,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CleverdeskTests/Pods-CleverdeskTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FDC5F5D680499B21F47E61AC /* Copy Pods Resources */ = {
+		FDC5F5D680499B21F47E61AC /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,8 +542,10 @@
 			files = (
 				BD80BA0B1CE4E19900E55B12 /* ViewController.swift in Sources */,
 				BD80BA4C1CE87B8900E55B12 /* Component.swift in Sources */,
+				65966F9E1CF483DC00FE4B8B /* CheckBox.swift in Sources */,
 				BD80BA541CE87D4F00E55B12 /* UI.swift in Sources */,
 				BD80BA111CE4E19900E55B12 /* Cleverdesk.xcdatamodeld in Sources */,
+				65966FA01CF486A800FE4B8B /* RadioButton.swift in Sources */,
 				BD80BA091CE4E19900E55B12 /* AppDelegate.swift in Sources */,
 				BD80BA561CE8810300E55B12 /* AbstractInputField.swift in Sources */,
 				BD5FC2491CF34E5E007F89CB /* README.md in Sources */,
@@ -546,6 +557,7 @@
 				BD80BA3A1CE4E2F100E55B12 /* MenuViewController.swift in Sources */,
 				BD80BA521CE87CE500E55B12 /* ComponentGroup.swift in Sources */,
 				BD5FC2431CF23275007F89CB /* MenuCell.swift in Sources */,
+				65966FA21CF4887C00FE4B8B /* RadiobuttonGroup.swift in Sources */,
 				BD5FC24B1CF3583F007F89CB /* YouTubeVideo.swift in Sources */,
 				BD80BA5A1CE891A000E55B12 /* BackendResponse.swift in Sources */,
 			);

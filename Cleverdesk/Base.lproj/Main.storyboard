@@ -11,7 +11,6 @@
         </mutableArray>
         <mutableArray key="Raleway regular.ttf">
             <string>Raleway-Regular</string>
-            <string>Raleway-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -26,45 +25,7 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r9b-0R-gid">
-                                <rect key="frame" x="20" y="106" width="374" height="630"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="672" id="OJY-jp-vgK"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="OJY-jp-vgK"/>
-                                    </mask>
-                                </variation>
-                            </scrollView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cleverdesk" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Grw-4Y-WtT">
-                                <rect key="frame" x="20" y="72" width="374" height="26"/>
-                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="22"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="r9b-0R-gid" secondAttribute="trailing" id="546-rF-uP7"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="r9b-0R-gid" secondAttribute="trailing" id="Ihb-9c-43A"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="r9b-0R-gid" secondAttribute="leading" id="Mzl-1Z-96O"/>
-                            <constraint firstItem="r9b-0R-gid" firstAttribute="top" secondItem="Grw-4Y-WtT" secondAttribute="bottom" constant="8" id="aCm-lJ-cr5"/>
-                            <constraint firstItem="Grw-4Y-WtT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="bFJ-2o-YBT"/>
-                            <constraint firstItem="r9b-0R-gid" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="i03-jq-rwE"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="Grw-4Y-WtT" secondAttribute="leading" id="i2v-bT-UG1"/>
-                            <constraint firstItem="r9b-0R-gid" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="sOZ-GP-i8S"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="r9b-0R-gid" secondAttribute="bottom" id="tIX-nO-EMm"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Grw-4Y-WtT" secondAttribute="trailing" id="zu8-fZ-Z40"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="Ihb-9c-43A"/>
-                                <exclude reference="i03-jq-rwE"/>
-                                <exclude reference="sOZ-GP-i8S"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="zdc-Lr-prr">
                         <barButtonItem key="leftBarButtonItem" image="menu" id="1Qe-5o-UfL">
@@ -77,8 +38,6 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="leftSliderBtn" destination="1Qe-5o-UfL" id="HOo-Aw-fMq"/>
-                        <outlet property="page" destination="Grw-4Y-WtT" id="dQH-Fr-arO"/>
-                        <outlet property="scrollView" destination="r9b-0R-gid" id="aqM-qM-ImX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

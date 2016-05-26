@@ -11,9 +11,7 @@ import JGProgressHUD
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var page: UILabel!
     
-    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var leftSliderBtn: UIBarButtonItem!
     
     @IBAction func openDrawer(sender: UIBarButtonItem) {
@@ -42,7 +40,6 @@ class ViewController: UIViewController {
             let root = view
             dispatch_async(dispatch_get_main_queue(), {
                 self.title = name
-                self.page.text = name
                 self.hud = JGProgressHUD(style: .Light)
                 self.hud!.indicatorView = JGProgressHUDIndeterminateIndicatorView(HUDStyle: .Light)
                 self.hud!.showInView(root)
@@ -52,6 +49,9 @@ class ViewController: UIViewController {
            
             
             dispatch_async(dispatch_get_main_queue(), {
+                self.view.subviews.forEach({ (v) in
+                    v.removeFromSuperview()
+                })
                 self.hud!.dismiss()
                 if !(request.status_code?.isSuccess)!{
                     //Request was not successfull. 
@@ -62,20 +62,25 @@ class ViewController: UIViewController {
                     self.hud!.dismissAfterDelay(3.0, animated: true)
                     return
                 }
-                
-                self.scrollView.subviews.forEach({ (vi) in
-                    vi.removeFromSuperview()
-                })
+                let scrollView: UIScrollView = UIScrollView(frame: CGRectMake(8, 8, self.view.frame.width - 16, self.view.frame.height - 16))
                 var pos:CGFloat = -8;
                 var last :UIView?
+                var container  = UIView(frame: scrollView.frame)
                 for view in request.toUI(){
-                    view.frame = CGRectMake(0, pos + 8 - view.frame.height, self.scrollView.frame.width, view.frame.height)
+                    view.frame = CGRectMake(0, pos + 8 - view.frame.height, scrollView.frame.width, view.frame.height)
                     pos += 8 + view.frame.height
                     view.translatesAutoresizingMaskIntoConstraints = false
-                    self.scrollView.addSubview(view)
-                    self.calculateConstraints(self.scrollView, target: view, above: last)
+                    container.addSubview(view)
+                    self.calculateConstraints(container, target: view, above: last)
                     last = view
                 }
+                scrollView.scrollEnabled = true
+                scrollView.bounces = false
+                scrollView.contentSize = CGSizeMake(scrollView.frame.width, pos)
+                scrollView.addSubview(container)
+                print(scrollView.contentOffset)
+                print(pos)
+                self.view.addSubview(scrollView)
             })
             
         }catch{
@@ -83,7 +88,7 @@ class ViewController: UIViewController {
         }
     }
     
-    func calculateConstraints(root: UIScrollView, target: UIView, above: UIView?)  {
+    func calculateConstraints(root: UIView, target: UIView, above: UIView?)  {
         /*let center = NSLayoutConstraint(item: target, attribute: .CenterX  , relatedBy: .Equal, toItem: root, attribute: .CenterX, multiplier: 1.0, constant: 0.0)
         center.active = true
         let wi = root.frame.width - 16
@@ -105,7 +110,7 @@ class ViewController: UIViewController {
             
         }else{
             
-             pinTop = NSLayoutConstraint(item: target, attribute: .Top, relatedBy: .Equal, toItem: root, attribute: .Top, multiplier: 1.0, constant: 0)
+             pinTop = NSLayoutConstraint(item: target, attribute: .Top, relatedBy: .Equal, toItem: root, attribute: .Top, multiplier: 1.0, constant: 50)
         }
         
         NSLayoutConstraint.activateConstraints([horizontal, horizontal2, horizontal3, pinTop!])

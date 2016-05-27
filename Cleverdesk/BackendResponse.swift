@@ -30,7 +30,7 @@ class BackendResponse {
         }
         let ui = UI()
         ui.fromJSON(body!)
-        return ui.toUI(CGRectMake(0, 0, 100, 20))!
+        return ui.toUI(CGRectMake(8, 0, 200, 20))!
     }
     
     

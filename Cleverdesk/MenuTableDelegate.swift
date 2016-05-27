@@ -38,7 +38,8 @@ class MenuTableDelegate: UIViewController, UITableViewDataSource, UITableViewDel
         
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
             let center  = (UIApplication.sharedApplication().delegate as! AppDelegate).center!
-            center.openPage(cell.path, name: cell.title.text!)
+            center.name = cell.title.text
+            center.path = cell.path
             
         })
     }

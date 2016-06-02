@@ -190,6 +190,7 @@
 		BD80BA071CE4E19900E55B12 /* Cleverdesk */ = {
 			isa = PBXGroup;
 			children = (
+				BDCFB9561CF8CEA7009C8F37 /* Menu */,
 				BD80BA4A1CE87B7300E55B12 /* UIComponents */,
 				BD80BA081CE4E19900E55B12 /* AppDelegate.swift */,
 				BD80BA0A1CE4E19900E55B12 /* ViewController.swift */,
@@ -198,9 +199,6 @@
 				BD80BA141CE4E19900E55B12 /* LaunchScreen.storyboard */,
 				BD80BA171CE4E19900E55B12 /* Info.plist */,
 				BD80BA0F1CE4E19900E55B12 /* Cleverdesk.xcdatamodeld */,
-				BD80BA391CE4E2F100E55B12 /* MenuViewController.swift */,
-				BD80BA481CE7252E00E55B12 /* MenuTableDelegate.swift */,
-				BD5FC2421CF23275007F89CB /* MenuCell.swift */,
 				BD80BA591CE891A000E55B12 /* BackendResponse.swift */,
 				BD5FC2441CF23ED6007F89CB /* HTTPStatusCode.swift */,
 			);
@@ -258,6 +256,16 @@
 				BD5FC24A1CF3583F007F89CB /* YouTubeVideo.swift */,
 			);
 			name = General;
+			sourceTree = "<group>";
+		};
+		BDCFB9561CF8CEA7009C8F37 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				BD80BA391CE4E2F100E55B12 /* MenuViewController.swift */,
+				BD80BA481CE7252E00E55B12 /* MenuTableDelegate.swift */,
+				BD5FC2421CF23275007F89CB /* MenuCell.swift */,
+			);
+			name = Menu;
 			sourceTree = "<group>";
 		};
 		CB6792A856D3D5E8AEA87E26 /* Frameworks */ = {

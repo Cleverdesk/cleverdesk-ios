@@ -25,7 +25,19 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="28U-Td-R8F">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="28U-Td-R8F" secondAttribute="trailing" constant="-20" id="R9g-CL-miw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="28U-Td-R8F" secondAttribute="bottom" id="faA-um-4Uq"/>
+                            <constraint firstItem="28U-Td-R8F" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-64" id="jyu-OT-OSg"/>
+                            <constraint firstItem="28U-Td-R8F" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="zqW-DI-BIf"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zdc-Lr-prr">
                         <barButtonItem key="leftBarButtonItem" image="menu" id="1Qe-5o-UfL">
@@ -38,6 +50,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="leftSliderBtn" destination="1Qe-5o-UfL" id="HOo-Aw-fMq"/>
+                        <outlet property="tableView" destination="28U-Td-R8F" id="kGs-vJ-Zpt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

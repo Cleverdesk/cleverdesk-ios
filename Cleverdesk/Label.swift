@@ -33,8 +33,9 @@ class Label: Component{
         if(text == nil){
             return nil
         }else{
-            let label = UILabel(frame: mask)
-            label.text = text
+            let label = UITableViewCell()
+            label.textLabel?.text = text
+            label.textLabel?.numberOfLines = 0
             return [label]
         }
     }

@@ -62,7 +62,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func openPage(){
         
         do{
-            
             let request = BackendResponse()
             
             let root = view

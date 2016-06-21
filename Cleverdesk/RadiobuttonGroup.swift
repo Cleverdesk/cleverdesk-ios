@@ -53,6 +53,8 @@ class RadioButtonGroup: UIViewController, Component, UIPickerViewDataSource, UIP
         input.dataSource = self
         input.delegate = self
         input.reloadAllComponents()
+        
+        
         return [input]
         
     }

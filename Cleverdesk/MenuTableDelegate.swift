@@ -14,7 +14,7 @@ class MenuTableDelegate: UIViewController, UITableViewDataSource, UITableViewDel
     
     
     func loadData(completion: (success: Bool) -> Void){
-        let data = NSData(contentsOfURL: NSURL(string: "http://Jonass-iMac.local:8080/pages")!)
+        let data = NSData(contentsOfURL: NSURL(string: "http://Matthiass-MBP.local:8080/pages")!)
         do{
             if data == nil {
                 completion(success: false)

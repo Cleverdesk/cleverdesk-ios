@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class BackendResponse {
-    var base_url: String = "http://Jonass-iMac.local:8080/"
+    var base_url: String = "http://Matthiass-MBP.local:8080/"
     var body: AnyObject?
     var status_code: HTTPStatusCode?
 

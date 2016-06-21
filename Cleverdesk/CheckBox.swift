@@ -29,14 +29,17 @@ class CheckBox: Component{
         
     }
     func toUI(frame: CGRect) -> [UIView]? {
-        let checkBox = UISwitch(frame: frame)
+        let checkBox = UISwitch(frame: CGRectMake(10,10,0,0))
+        
         if let state = value{
             checkBox.on = state
         }
         if let usable = enabled{
             checkBox.enabled = usable
         }
-        return [checkBox]
+        let view = UIView(frame: CGRectMake(0,0,0,42))
+        view.addSubview(checkBox)
+        return [view]
         
     }
 

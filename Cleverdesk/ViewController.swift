@@ -38,19 +38,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
     }
     
-    
-    @IBAction func openDrawer(sender: UIBarButtonItem) {
-        let app: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        
-        if app.centerDrawer.openSide == .None {
-            
-            app.centerDrawer.openDrawerSide(.Left, animated: true, completion: nil)
-            
-        }else{
-            app.centerDrawer.closeDrawerAnimated(true, completion: nil)
-            
-        }
-    }
+   
     
     var hud: JGProgressHUD?
     
@@ -63,28 +51,34 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         do{
             
-            let request = BackendResponse()
+            let request = BackendResponse(server: active_user!.server!)
             
             let root = view
             dispatch_async(dispatch_get_main_queue(), {
                 self.hud = JGProgressHUD(style: .Light)
                 self.hud!.indicatorView = JGProgressHUDIndeterminateIndicatorView(HUDStyle: .Light)
-                self.hud!.showInView(root)
+                self.hud!.showInView(self.tableView)
             })
-            try request.execute(path)
-            
-           
-            
-            dispatch_async(dispatch_get_main_queue(), {
+            try request.execute(path) {
+                (error) in
                 self.components.removeAll()
                 self.hud!.dismiss()
+                if error != nil {
+                    self.hud!.indicatorView = JGProgressHUDErrorIndicatorView()
+                    self.hud!.showInView(self.tableView)
+                    self.hud!.dismissAfterDelay(4.0, animated: true)
+                    print(error)
+                    
+                    return
+                }
                 if !(request.status_code?.isSuccess)!{
-                    //Request was not successfull. 
+                    //Request was not successfull.
                     self.hud = JGProgressHUD(style: .Light)
                     self.hud?.indicatorView = JGProgressHUDErrorIndicatorView()
                     self.hud!.textLabel.text = request.status_code?.localizedReasonPhrase.uppercaseString
                     self.hud!.showInView(root)
-                    self.hud!.dismissAfterDelay(3.0, animated: true)
+                    self.hud!.dismissAfterDelay(4.0, animated: true)
+                
                     return
                 }
                 for cell in request.toUI() {
@@ -101,7 +95,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 
                 self.tableView.reloadData()
                 
-                
+
+            }
+            
+           
+            
+            dispatch_async(dispatch_get_main_queue(), {
+            
             })
             
         }catch{

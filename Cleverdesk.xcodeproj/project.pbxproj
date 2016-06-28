@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		322AA0DD6930DE7F8B9AAA33 /* Pods_Cleverdesk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4446EBBC6719F5F542994C3 /* Pods_Cleverdesk.framework */; };
 		36C352F1B70248D3861D74CF /* Pods_CleverdeskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42758A9C377261E9B7E1625E /* Pods_CleverdeskTests.framework */; };
+		650F93E01D22D434002F21A3 /* HelperFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650F93DF1D22D434002F21A3 /* HelperFiles.swift */; };
 		65966F9E1CF483DC00FE4B8B /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65966F9D1CF483DC00FE4B8B /* CheckBox.swift */; };
 		65966FA01CF486A800FE4B8B /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65966F9F1CF486A800FE4B8B /* RadioButton.swift */; };
 		65966FA21CF4887C00FE4B8B /* RadiobuttonGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65966FA11CF4887C00FE4B8B /* RadiobuttonGroup.swift */; };
@@ -68,6 +69,7 @@
 /* Begin PBXFileReference section */
 		390442FC3C3C8F6F63D5A66B /* Pods-Cleverdesk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cleverdesk.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cleverdesk/Pods-Cleverdesk.release.xcconfig"; sourceTree = "<group>"; };
 		42758A9C377261E9B7E1625E /* Pods_CleverdeskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleverdeskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		650F93DF1D22D434002F21A3 /* HelperFiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperFiles.swift; sourceTree = "<group>"; };
 		65966F9D1CF483DC00FE4B8B /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		65966F9F1CF486A800FE4B8B /* RadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
 		65966FA11CF4887C00FE4B8B /* RadiobuttonGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadiobuttonGroup.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 				BD80BA4A1CE87B7300E55B12 /* UIComponents */,
 				BD80BA081CE4E19900E55B12 /* AppDelegate.swift */,
 				BD80BA0A1CE4E19900E55B12 /* ViewController.swift */,
+				650F93DF1D22D434002F21A3 /* HelperFiles.swift */,
 				BD80BA0C1CE4E19900E55B12 /* Main.storyboard */,
 				BD80BA121CE4E19900E55B12 /* Assets.xcassets */,
 				BD80BA141CE4E19900E55B12 /* LaunchScreen.storyboard */,
@@ -579,6 +582,7 @@
 				65966F9E1CF483DC00FE4B8B /* CheckBox.swift in Sources */,
 				BD80BA541CE87D4F00E55B12 /* UI.swift in Sources */,
 				BDF0113C1D1D9D88004B516F /* LoginViewController.swift in Sources */,
+				650F93E01D22D434002F21A3 /* HelperFiles.swift in Sources */,
 				BD80BA111CE4E19900E55B12 /* Cleverdesk.xcdatamodeld in Sources */,
 				65966FA01CF486A800FE4B8B /* RadioButton.swift in Sources */,
 				BD80BA091CE4E19900E55B12 /* AppDelegate.swift in Sources */,

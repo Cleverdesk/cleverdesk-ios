@@ -2,7 +2,7 @@
 //  User+CoreDataProperties.swift
 //  Cleverdesk
 //
-//  Created by Jonas Franz on 21.06.16.
+//  Created by Matthias Kremer on 28.06.16.
 //  Copyright © 2016 Cleverdesk. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -14,9 +14,9 @@ import CoreData
 
 extension User {
 
+    @NSManaged var active: Bool
     @NSManaged var name: String?
     @NSManaged var username: String?
-    @NSManaged var active: Bool
     @NSManaged var server: Server?
 
 }

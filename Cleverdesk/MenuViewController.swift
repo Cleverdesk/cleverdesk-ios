@@ -34,6 +34,9 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
                 hud.showInView(self.pages)
                 hud.dismissAfterDelay(2.0, animated: true)
             }
+            else{
+                self.pages.reloadData()
+            }
             
         }
         pages.delegate = self
@@ -64,6 +67,7 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
                     return
                 }
                 self.pages_data = request.body as! [String: String]
+                
                 completion(success: true)
             }
         }catch {

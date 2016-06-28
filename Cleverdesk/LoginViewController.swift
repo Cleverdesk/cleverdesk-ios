@@ -3,12 +3,18 @@ import JGProgressHUD
 import Async
 import CoreData
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var server: UITextField!
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var logInButton: UIButton!
+    @IBOutlet weak var logoImageView: UIImageView!
+    @IBOutlet weak var textFieldTopConstr: NSLayoutConstraint!
     
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,10 +23,54 @@ class LoginViewController: UIViewController {
         }
         
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "banner4")!)
-
+        self.logInButton.layer.cornerRadius = 5
+        self.logInButton.clipsToBounds = true
         // Do any additional setup after loading the view.
     }
-
+    
+    func animateState(keyboardAppearing: Bool){
+        switch UIDevice().type {
+        case .iPhone4S, .iPhone4, .iPhone5, .iPhone5C, .iPhone5S, .simulator:
+            break
+        default:
+            return
+        }
+        
+        
+        if keyboardAppearing{
+           
+            UIView.animateWithDuration(NSTimeInterval(0.3), animations: {
+                self.logoImageView.alpha = 0.0
+                }, completion: { (succ: Bool) in
+                    if succ{
+                        switch UIDevice().type{
+                        case .iPhone4, .iPhone4S, .simulator:
+                            self.textFieldTopConstr.constant = -100
+                        default:
+                            self.textFieldTopConstr.constant = -50
+                        }
+                        
+                        UIView.animateWithDuration(NSTimeInterval(0.5), animations: {
+                            self.view.layoutIfNeeded()
+                        })
+                    }
+            })
+            
+        }
+        else{
+            self.textFieldTopConstr.constant = 30
+            UIView.animateWithDuration(NSTimeInterval(0.6), animations: {
+                self.view.layoutIfNeeded()
+                }, completion: { (succ: Bool) in
+                    if succ{
+                        UIView.animateWithDuration(NSTimeInterval(0.6), animations: {
+                            self.logoImageView.alpha = 1.0
+                        })
+                    }
+            })
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -193,16 +243,32 @@ class LoginViewController: UIViewController {
         return false
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func textFieldDidBeginEditing(textField: UITextField) {
+        animateState(true)
     }
-    */
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        switch textField.tag {
+        case 0:
+            username.becomeFirstResponder()
+        case 1:
+            password.becomeFirstResponder()
+        case 2:
+            password.resignFirstResponder()
+            willLogin(UIButton())
+        default:
+            print("Error in switch")
+        }
+        return true
+    }
+    
+    @IBAction func HideKeyboard(sender: UITapGestureRecognizer) {
+        animateState(false)
+        server.resignFirstResponder()
+        username.resignFirstResponder()
+        password.resignFirstResponder()
+    }
 
+    
     
 }
 

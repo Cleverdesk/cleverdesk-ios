@@ -11,7 +11,7 @@ import UIKit
 import Async
 
 class BackendResponse {
-    var base_url: String = "http://Matthiass-MBP.local:8080/"
+    var base_url: String = "http://Jonass-iMac.local:8080/"
     var body: AnyObject?
     var status_code: HTTPStatusCode?
     
@@ -22,7 +22,7 @@ class BackendResponse {
     init (server: Server){
         base_url = server.url!
     }
-
+    
     internal var error: NSError?
     
     func execute(path: String) throws  {
@@ -30,7 +30,7 @@ class BackendResponse {
         let data: NSData =  NSData(contentsOfURL: NSURL(string: "\(base_url)\(path)")!)!
         var json: [String: AnyObject] =  try NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments) as! [String: AnyObject]
         status_code = HTTPStatusCode(rawValue: (json["status"] as? Int)!)
-
+        
         body = json["body"]
     }
     
@@ -43,7 +43,7 @@ class BackendResponse {
         request.HTTPMethod = "GET"
         request.setValue((UIApplication.sharedApplication().delegate as! AppDelegate).active_user?.token, forHTTPHeaderField: "token")
         request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
-       
+        
         let task =  NSURLSession.sharedSession().dataTaskWithRequest(request) {
             (data, response, error) in
             if error != nil {
@@ -73,12 +73,12 @@ class BackendResponse {
         
         
     }
-
+    
     
     
     func execute(path: String, post_body: [String: AnyObject], completionHandler: (error: NSError?) -> Void) throws  {
         print("\(base_url)\(path)")
-    
+        
         let jsonData = try NSJSONSerialization.dataWithJSONObject(post_body, options: .PrettyPrinted)
         let url = NSURL(string: "\(base_url)\(path)")!
         

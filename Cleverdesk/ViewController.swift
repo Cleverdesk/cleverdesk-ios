@@ -50,7 +50,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func openPage(){
         
         do{
-            let request = BackendResponse()
+            let request = BackendResponse(server: self.active_user!.server!)
             
             let root = view
             dispatch_async(dispatch_get_main_queue(), {

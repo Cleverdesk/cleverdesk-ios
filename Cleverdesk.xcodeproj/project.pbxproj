@@ -13,6 +13,7 @@
 		65966FA01CF486A800FE4B8B /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65966F9F1CF486A800FE4B8B /* RadioButton.swift */; };
 		65966FA21CF4887C00FE4B8B /* RadiobuttonGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65966FA11CF4887C00FE4B8B /* RadiobuttonGroup.swift */; };
 		B09023C9E2E23189501A06A7 /* Pods_CleverdeskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4261CE25F6CE50C2F5BFCF2 /* Pods_CleverdeskUITests.framework */; };
+		BD41A4E41D1EA94F00ED3BE1 /* DrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD41A4E31D1EA94F00ED3BE1 /* DrawerViewController.swift */; };
 		BD5FC2431CF23275007F89CB /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5FC2421CF23275007F89CB /* MenuCell.swift */; };
 		BD5FC2451CF23ED6007F89CB /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5FC2441CF23ED6007F89CB /* HTTPStatusCode.swift */; };
 		BD5FC2471CF2457C007F89CB /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5FC2461CF2457C007F89CB /* InputField.swift */; };
@@ -30,7 +31,6 @@
 		BD80BA2C1CE4E19A00E55B12 /* CleverdeskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD80BA2B1CE4E19A00E55B12 /* CleverdeskUITests.swift */; };
 		BD80BA3A1CE4E2F100E55B12 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD80BA391CE4E2F100E55B12 /* MenuViewController.swift */; };
 		BD80BA3E1CE4E5F400E55B12 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = BD80BA3D1CE4E5F400E55B12 /* Podfile */; };
-		BD80BA491CE7252E00E55B12 /* MenuTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD80BA481CE7252E00E55B12 /* MenuTableDelegate.swift */; };
 		BD80BA4C1CE87B8900E55B12 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD80BA4B1CE87B8900E55B12 /* Component.swift */; };
 		BD80BA501CE87C8300E55B12 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD80BA4F1CE87C8300E55B12 /* Label.swift */; };
 		BD80BA521CE87CE500E55B12 /* ComponentGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD80BA511CE87CE500E55B12 /* ComponentGroup.swift */; };
@@ -38,9 +38,14 @@
 		BD80BA561CE8810300E55B12 /* AbstractInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD80BA551CE8810300E55B12 /* AbstractInputField.swift */; };
 		BD80BA5A1CE891A000E55B12 /* BackendResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD80BA591CE891A000E55B12 /* BackendResponse.swift */; };
 		BD80BA5C1CE8C7C000E55B12 /* ComponentRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD80BA5B1CE8C7C000E55B12 /* ComponentRegistry.swift */; };
+		BDC3AC631D19B3D60096206E /* Server+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC3AC5F1D19B3D60096206E /* Server+CoreDataProperties.swift */; };
+		BDC3AC641D19B3D60096206E /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC3AC601D19B3D60096206E /* Server.swift */; };
+		BDC3AC651D19B3D60096206E /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC3AC611D19B3D60096206E /* User+CoreDataProperties.swift */; };
+		BDC3AC661D19B3D60096206E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC3AC621D19B3D60096206E /* User.swift */; };
 		BDCFB9131CF750AB009C8F37 /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCFB9121CF750AB009C8F37 /* TextArea.swift */; };
 		BDEB823E1CEB911000110D73 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = BDEB823D1CEB911000110D73 /* .gitignore */; };
 		BDEB82401CEB912200110D73 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = BDEB823F1CEB912200110D73 /* LICENSE */; };
+		BDF0113C1D1D9D88004B516F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF0113B1D1D9D88004B516F /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +76,7 @@
 		A1DCD38AA7C338DCE7668DDD /* Pods-CleverdeskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleverdeskTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CleverdeskTests/Pods-CleverdeskTests.release.xcconfig"; sourceTree = "<group>"; };
 		A39D64A398EE0511C4C3DABE /* Pods-CleverdeskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleverdeskUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CleverdeskUITests/Pods-CleverdeskUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A4446EBBC6719F5F542994C3 /* Pods_Cleverdesk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cleverdesk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD41A4E31D1EA94F00ED3BE1 /* DrawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerViewController.swift; sourceTree = "<group>"; };
 		BD5FC2421CF23275007F89CB /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		BD5FC2441CF23ED6007F89CB /* HTTPStatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
 		BD5FC2461CF2457C007F89CB /* InputField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
@@ -82,7 +88,6 @@
 		BD80BA081CE4E19900E55B12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD80BA0A1CE4E19900E55B12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BD80BA0D1CE4E19900E55B12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BD80BA101CE4E19900E55B12 /* Cleverdesk.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cleverdesk.xcdatamodel; sourceTree = "<group>"; };
 		BD80BA121CE4E19900E55B12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD80BA151CE4E19900E55B12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD80BA171CE4E19900E55B12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -93,8 +98,7 @@
 		BD80BA2B1CE4E19A00E55B12 /* CleverdeskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleverdeskUITests.swift; sourceTree = "<group>"; };
 		BD80BA2D1CE4E19A00E55B12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD80BA391CE4E2F100E55B12 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		BD80BA3D1CE4E5F400E55B12 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
-		BD80BA481CE7252E00E55B12 /* MenuTableDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableDelegate.swift; sourceTree = "<group>"; };
+		BD80BA3D1CE4E5F400E55B12 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BD80BA4B1CE87B8900E55B12 /* Component.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
 		BD80BA4F1CE87C8300E55B12 /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		BD80BA511CE87CE500E55B12 /* ComponentGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentGroup.swift; sourceTree = "<group>"; };
@@ -102,9 +106,15 @@
 		BD80BA551CE8810300E55B12 /* AbstractInputField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractInputField.swift; sourceTree = "<group>"; };
 		BD80BA591CE891A000E55B12 /* BackendResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendResponse.swift; sourceTree = "<group>"; };
 		BD80BA5B1CE8C7C000E55B12 /* ComponentRegistry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentRegistry.swift; sourceTree = "<group>"; };
+		BDC3AC5F1D19B3D60096206E /* Server+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Server+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BDC3AC601D19B3D60096206E /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		BDC3AC611D19B3D60096206E /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BDC3AC621D19B3D60096206E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BDC3AC691D19C3FC0096206E /* Cleverdesk 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Cleverdesk 2.xcdatamodel"; sourceTree = "<group>"; };
 		BDCFB9121CF750AB009C8F37 /* TextArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
 		BDEB823D1CEB911000110D73 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		BDEB823F1CEB912200110D73 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		BDF0113B1D1D9D88004B516F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D4261CE25F6CE50C2F5BFCF2 /* Pods_CleverdeskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleverdeskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8EF2FFDFA321D543A99CCDE /* Pods-CleverdeskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleverdeskUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CleverdeskUITests/Pods-CleverdeskUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -190,6 +200,7 @@
 		BD80BA071CE4E19900E55B12 /* Cleverdesk */ = {
 			isa = PBXGroup;
 			children = (
+				BDC3AC5E1D19B3C30096206E /* Database */,
 				BDCFB9561CF8CEA7009C8F37 /* Menu */,
 				BD80BA4A1CE87B7300E55B12 /* UIComponents */,
 				BD80BA081CE4E19900E55B12 /* AppDelegate.swift */,
@@ -258,12 +269,24 @@
 			name = General;
 			sourceTree = "<group>";
 		};
+		BDC3AC5E1D19B3C30096206E /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				BDC3AC5F1D19B3D60096206E /* Server+CoreDataProperties.swift */,
+				BDC3AC601D19B3D60096206E /* Server.swift */,
+				BDC3AC611D19B3D60096206E /* User+CoreDataProperties.swift */,
+				BDC3AC621D19B3D60096206E /* User.swift */,
+				BDF0113B1D1D9D88004B516F /* LoginViewController.swift */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
 		BDCFB9561CF8CEA7009C8F37 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
 				BD80BA391CE4E2F100E55B12 /* MenuViewController.swift */,
-				BD80BA481CE7252E00E55B12 /* MenuTableDelegate.swift */,
 				BD5FC2421CF23275007F89CB /* MenuCell.swift */,
+				BD41A4E31D1EA94F00ED3BE1 /* DrawerViewController.swift */,
 			);
 			name = Menu;
 			sourceTree = "<group>";
@@ -555,6 +578,7 @@
 				BD80BA4C1CE87B8900E55B12 /* Component.swift in Sources */,
 				65966F9E1CF483DC00FE4B8B /* CheckBox.swift in Sources */,
 				BD80BA541CE87D4F00E55B12 /* UI.swift in Sources */,
+				BDF0113C1D1D9D88004B516F /* LoginViewController.swift in Sources */,
 				BD80BA111CE4E19900E55B12 /* Cleverdesk.xcdatamodeld in Sources */,
 				65966FA01CF486A800FE4B8B /* RadioButton.swift in Sources */,
 				BD80BA091CE4E19900E55B12 /* AppDelegate.swift in Sources */,
@@ -562,12 +586,16 @@
 				BD5FC2491CF34E5E007F89CB /* README.md in Sources */,
 				BDCFB9131CF750AB009C8F37 /* TextArea.swift in Sources */,
 				BD5FC2451CF23ED6007F89CB /* HTTPStatusCode.swift in Sources */,
-				BD80BA491CE7252E00E55B12 /* MenuTableDelegate.swift in Sources */,
+				BDC3AC661D19B3D60096206E /* User.swift in Sources */,
+				BDC3AC641D19B3D60096206E /* Server.swift in Sources */,
 				BD5FC2471CF2457C007F89CB /* InputField.swift in Sources */,
+				BDC3AC631D19B3D60096206E /* Server+CoreDataProperties.swift in Sources */,
 				BD80BA5C1CE8C7C000E55B12 /* ComponentRegistry.swift in Sources */,
 				BD80BA501CE87C8300E55B12 /* Label.swift in Sources */,
+				BD41A4E41D1EA94F00ED3BE1 /* DrawerViewController.swift in Sources */,
 				BD80BA3A1CE4E2F100E55B12 /* MenuViewController.swift in Sources */,
 				BD80BA521CE87CE500E55B12 /* ComponentGroup.swift in Sources */,
+				BDC3AC651D19B3D60096206E /* User+CoreDataProperties.swift in Sources */,
 				BD5FC2431CF23275007F89CB /* MenuCell.swift in Sources */,
 				65966FA21CF4887C00FE4B8B /* RadiobuttonGroup.swift in Sources */,
 				BD5FC24B1CF3583F007F89CB /* YouTubeVideo.swift in Sources */,
@@ -835,9 +863,9 @@
 		BD80BA0F1CE4E19900E55B12 /* Cleverdesk.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				BD80BA101CE4E19900E55B12 /* Cleverdesk.xcdatamodel */,
+				BDC3AC691D19C3FC0096206E /* Cleverdesk 2.xcdatamodel */,
 			);
-			currentVersion = BD80BA101CE4E19900E55B12 /* Cleverdesk.xcdatamodel */;
+			currentVersion = BDC3AC691D19C3FC0096206E /* Cleverdesk 2.xcdatamodel */;
 			path = Cleverdesk.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

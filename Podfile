@@ -4,9 +4,12 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'Cleverdesk' do
-  pod 'DrawerController', '~> 1.0'
+  pod 'KYDrawerController'
   pod 'JGProgressHUD'
   pod 'YouTubePlayer'
+  pod 'KeychainSwift', '~> 3.0'
+  pod 'AsyncSwift'
+  pod 'SwiftValidator', :git => 'https://github.com/jpotts18/SwiftValidator.git', :tag => '4.0.0'
 end
 
 target 'CleverdeskTests' do

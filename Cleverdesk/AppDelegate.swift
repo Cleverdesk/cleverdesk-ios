@@ -8,10 +8,9 @@
 
 import UIKit
 import CoreData
-import DrawerController
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UIPopoverPresentationControllerDelegate{
 
     var window: UIWindow?
     var center: ViewController?
@@ -21,41 +20,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, willFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-       
+        do {
+            let fetchRequest = NSFetchRequest(entityName: "User")
+            let entityDescription = NSEntityDescription.entityForName("User", inManagedObjectContext: managedObjectContext)
+            fetchRequest.entity = entityDescription
+            let users = try managedObjectContext.executeFetchRequest(fetchRequest) as! [User]
+            
+            for user in users {
+                print(user)
+                if user.active {
+                    active_user = user
+                    break
+                }
+            }
+        } catch {
+           print(error as NSError)
+        }
         
         
         return true
     }
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
-       
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        
-        center = storyBoard.instantiateViewControllerWithIdentifier("ViewController") as? ViewController
-        let left = storyBoard.instantiateViewControllerWithIdentifier("MenuViewController") as! MenuViewController
-        
-        let leftSideNav = UINavigationController(rootViewController: left)
-        let centerSideNav = UINavigationController(rootViewController: center!)
-        
-        centerDrawer = DrawerController(centerViewController: centerSideNav, leftDrawerViewController: leftSideNav)
-        
-        centerDrawer.showsShadows = false
-        centerDrawer.restorationIdentifier = "Drawer"
-        centerDrawer.openDrawerGestureModeMask = .PanningCenterView
-        centerDrawer.closeDrawerGestureModeMask = .PanningCenterView
-        
-                
     
+    func popoverPresentationControllerDidDismissPopover(popoverPresentationController: UIPopoverPresentationController) {
         
-        
-        
-        window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        window?.tintColor = UIColor(red: 29/255, green: 173/255, blue: 234/255, alpha: 1.0)
-        window!.rootViewController = centerDrawer
-        window!.makeKeyAndVisible()
-        
-        
+    }
+    
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
+
+
         return true
     }
+
+
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -145,4 +141,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 }
-
+extension UIViewController {
+     var active_user: User? {
+        get{
+            return (UIApplication.sharedApplication().delegate as! AppDelegate).active_user
+        }
+        set(value) {
+            (UIApplication.sharedApplication().delegate as! AppDelegate).active_user = value
+        }
+    }
+}
